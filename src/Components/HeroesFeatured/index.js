@@ -1,0 +1,32 @@
+import React, { useEffect, useState } from 'react';
+
+import { getBasicHeroById } from '../../request';
+
+import HeroSimplified from '../HeroSimplified/index';
+
+const HeroesFeatured = () => {
+    useEffect(() => {
+        fetchAndRenderFeaturedHeroes();
+    }, [])
+
+    const [featuredHeroesList, setFeaturedHero] = useState([]);
+
+    const featuredHerosIds = [13, 200, 36];
+
+    const fetchAndRenderFeaturedHeroes = async () => {
+        let heroes = []
+        for (const heroId of featuredHerosIds) {
+            const data = await getBasicHeroById(heroId);
+            heroes.push(data);
+        }
+        setFeaturedHero(heroes);
+    }
+
+    return (
+        <>
+            {featuredHeroesList.map(({name, powerstats, imgUrl}) => <HeroSimplified name={name} powerstats={powerstats} imgUrl={imgUrl} />)}
+        </>
+    )
+}
+
+export default HeroesFeatured

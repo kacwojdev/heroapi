@@ -1,0 +1,20 @@
+.App__Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px;
+    font-family: 'Carter One', cursive;
+    font-size: 4rem;
+    color: black;
+}
+
+.App__Title--Decor {
+    -webkit-text-stroke: 3px black;
+	-webkit-text-fill-color: white;
+}
+
+@media only screen and (max-width: 750px) {
+    .App__Title {
+        margin: 75px;
+    }
+}

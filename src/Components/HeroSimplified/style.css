@@ -1,0 +1,31 @@
+.HeroSimplified {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    font-family: 'Carter One', cursive;
+    border: 3px dashed rgb(207,207,207);
+    border-radius: 15px;
+    transition: 0.2s ease-in border-color;
+}
+
+.HeroSimplfied__Name { 
+    font-size: 3rem;
+    text-align: center;
+}
+
+.HeroSimplified__Image {
+    justify-self: center;
+    border-radius: 15px;
+}
+
+.HeroSimplified__PowerstatsBox {
+    display: flex;
+    padding: 50px 15px;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+.HeroSimplified:hover {
+    cursor: pointer;
+    border-color: black;
+}
