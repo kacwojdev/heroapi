@@ -61,3 +61,25 @@
         margin: 75px;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .App__Title {
+        margin: 20px;
+        font-size: 2rem;
+    }
+
+    .App__Title--Decor {
+        -webkit-text-stroke: 1px black;
+        -webkit-text-fill-color: white;
+    }
+    
+    .App__SearchBar {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr;
+        margin: 25px auto;
+    }
+
+    .App__SearchBar input, .App__SearchBar button {
+        font-size: 1rem;
+    }
+}

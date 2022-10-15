@@ -29,3 +29,17 @@
     cursor: pointer;
     border-color: black;
 }
+
+@media only screen and (max-width: 500px) {
+    .HeroSimplfied__Name {
+        font-size: 1rem;
+    }
+
+    .HeroSimplified__PowerstatsBox {
+        font-size: 1rem;
+    }
+
+    .HeroSimplified__Image {
+        width: 200px;
+    }
+}

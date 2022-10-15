@@ -1,8 +1,15 @@
-.footer {
+footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 150px;
     width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
