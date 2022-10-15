@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+  BrowserRouter as Router, 
+  Route,
+  Routes
+} from 'react-router-dom';
 
 import Nav from './Components/Nav/index';
 import HeroesFeatured from './Components/HeroesFeatured/index';
@@ -13,11 +18,15 @@ function App() {
   return (
     <div className="Container">
       <div className="App">
-        <Nav />
-        <div className="App__Grid">
-          <HeroesFeatured />
-        </div>
-        <Footer />
+        <Router>
+          <Nav />
+          <Routes>
+            <Route exact path="/" element={<HeroesFeatured />} />
+            <Route path="/search" />
+            <Route path="/hero/:id" />
+          </Routes>
+          <Footer />
+        </Router>
       </div>
     </div>
   );

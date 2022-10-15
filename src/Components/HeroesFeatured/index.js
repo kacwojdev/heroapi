@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { getBasicHeroById } from '../../request';
 
 import HeroSimplified from '../HeroSimplified/index';
+import './style.css';
 
 const HeroesFeatured = () => {
     useEffect(() => {
@@ -23,9 +24,9 @@ const HeroesFeatured = () => {
     }
 
     return (
-        <>
+        <div className="App__Grid">
             {featuredHeroesList.map(({name, powerstats, imgUrl}) => <HeroSimplified key={name} name={name} powerstats={powerstats} imgUrl={imgUrl} />)}
-        </>
+        </div>
     )
 }
 
