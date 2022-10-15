@@ -7,6 +7,7 @@ import {
 
 import Nav from './Components/Nav/index';
 import HeroesFeatured from './Components/HeroesFeatured/index';
+import SearchList from './Components/SearchList/index';
 import Footer from './Components/Footer/index';
 import './App.css';
 import './index.css';
@@ -22,7 +23,7 @@ function App() {
           <Nav />
           <Routes>
             <Route exact path="/" element={<HeroesFeatured />} />
-            <Route path="/search" />
+            <Route path="/search/:name" element={<SearchList />} />
             <Route path="/hero/:id" />
           </Routes>
           <Footer />
