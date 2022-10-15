@@ -11,7 +11,7 @@ const HeroesFeatured = () => {
 
     const [featuredHeroesList, setFeaturedHero] = useState([]);
 
-    const featuredHerosIds = [13, 200, 36];
+    const featuredHerosIds = [13, 200, 36, 20, 23, 41];
 
     const fetchAndRenderFeaturedHeroes = async () => {
         let heroes = []
@@ -24,7 +24,7 @@ const HeroesFeatured = () => {
 
     return (
         <>
-            {featuredHeroesList.map(({name, powerstats, imgUrl}) => <HeroSimplified name={name} powerstats={powerstats} imgUrl={imgUrl} />)}
+            {featuredHeroesList.map(({name, powerstats, imgUrl}) => <HeroSimplified key={name} name={name} powerstats={powerstats} imgUrl={imgUrl} />)}
         </>
     )
 }
