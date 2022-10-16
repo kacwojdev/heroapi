@@ -6,7 +6,6 @@ import HeroSimplified from '../HeroSimplified/index';
 import { searchHeroByName } from '../../request.js';
 
 const SearchList = () => {
-
     const { name } = useParams(); 
     const [searchedList, setSearchedList] = useState([]);
     const [isLoading, setLoader] = useState(true);

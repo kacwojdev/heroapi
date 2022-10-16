@@ -6,13 +6,12 @@ import HeroSimplified from '../HeroSimplified/index';
 import './style.css';
 
 const HeroesFeatured = () => {
+    const [featuredHeroesList, setFeaturedHero] = useState([]);
+    const featuredHerosIds = [13, 200, 36, 20, 23, 41];
+
     useEffect(() => {
         fetchAndRenderFeaturedHeroes();
     }, [])
-
-    const [featuredHeroesList, setFeaturedHero] = useState([]);
-
-    const featuredHerosIds = [13, 200, 36, 20, 23, 41];
 
     const fetchAndRenderFeaturedHeroes = async () => {
         let heroes = []
@@ -25,7 +24,7 @@ const HeroesFeatured = () => {
 
     return (
         <div className="App__Grid">
-            {featuredHeroesList.map(({name, powerstats, imgUrl}) => <HeroSimplified key={name} name={name} powerstats={powerstats} imgUrl={imgUrl} />)}
+            {featuredHeroesList.map(({id, name, powerstats, imgUrl}) => <HeroSimplified key={name} heroId={id} name={name} powerstats={powerstats} imgUrl={imgUrl} />)}
         </div>
     )
 }
