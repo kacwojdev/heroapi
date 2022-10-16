@@ -4,6 +4,7 @@ import { Oval } from 'react-loader-spinner';
 
 import HeroSimplified from '../HeroSimplified/index';
 import { searchHeroByName } from '../../request.js';
+import './style.css';
 
 const SearchList = () => {
     const { name } = useParams(); 
@@ -23,12 +24,10 @@ const SearchList = () => {
     }
 
   return (
-    <div>
-
-        <h2>You searched for: {name}</h2>
-
+    <div className="SearchList">
+        <h2 className="SearchList__Info">You searched for: {name}</h2>
         <div className="App__Grid">
-            {!isLoading && searchedList.map(({name, powerstats, images}) => <HeroSimplified key={name} name={name} powerstats={powerstats} imgUrl={images.md} />)}
+            {!isLoading && searchedList.map(({id, name, powerstats, images}) => <HeroSimplified key={name} name={name} heroId={id} powerstats={powerstats} imgUrl={images.md} />)}
             {isLoading && <Oval />}
         </div>
 

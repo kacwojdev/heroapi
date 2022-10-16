@@ -1,0 +1,55 @@
+.HeroDetailed {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.HeroDetailed img {
+    max-height: 640px;
+}
+
+.HeroDetailed__Name {
+    font-family: 'Carter One', cursive;
+    font-size: 3rem;
+    grid-area: name;
+}
+
+
+.HeroDetailed__Appearance__One, .HeroDetailed__Appearance__Two, .HeroDetailed__Biography {
+    padding: 30px;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.HeroDetailed__Appearance__One {
+    grid-area: appOne;
+}
+
+.HeroDetailed__Appearance__Two {
+    grid-area: appTwo;
+}
+
+.HeroDetailed__Biography {
+    grid-area: bio;
+}
+
+.HeroDetailed--CategoryName {
+    font-weight: 700;
+    color: grey;
+}
+
+.HeroDetailed__InfoBox {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-template-rows: auto auto auto;
+    grid-gap: 30px;
+    grid-template-areas:
+        "name name"
+        "appOne appTwo" 
+        "bio bio";
+}
+
+
+@media only screen and (max-width: 550px) {
+    .HeroDetailed__Name {
+        font-size: 1rem;
+    }
+}

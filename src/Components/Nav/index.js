@@ -12,7 +12,9 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className="App__Title"><span className="App__Title--Decor">Super</span>heroes</div>
+      <Link to="/">
+        <div className="App__Title"><span className="App__Title--Decor">Super</span>heroes</div>
+      </Link>
       <div className="App__SearchBar">
         <input onChange={event => {setSearchedName(event.target.value)}} value={searchedName} placeholder="Type your favourite super hero name ..." htmlFor="name" />
         <Link to={`/search/${searchedName}`}>

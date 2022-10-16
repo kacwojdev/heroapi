@@ -7,7 +7,7 @@ import './style.css';
 
 const HeroesFeatured = () => {
     const [featuredHeroesList, setFeaturedHero] = useState([]);
-    const featuredHerosIds = [13, 200, 36, 20, 23, 41];
+    const featuredHerosIds = [13, 222, 36, 20, 23, 41];
 
     useEffect(() => {
         fetchAndRenderFeaturedHeroes();
