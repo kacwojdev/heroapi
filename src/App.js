@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="Container">
       <div className="App">
-        <Router>
+        <Router basename="/heroapi">
           <Nav />
           <Routes>
             <Route exact path="/" element={<HeroesFeatured />} />
