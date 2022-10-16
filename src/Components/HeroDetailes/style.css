@@ -1,10 +1,12 @@
 .HeroDetailed {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
 .HeroDetailed img {
     max-height: 640px;
+    max-width: 360px;
 }
 
 .HeroDetailed__Name {
@@ -51,5 +53,12 @@
 @media only screen and (max-width: 550px) {
     .HeroDetailed__Name {
         font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .HeroDetailed {
+        flex-direction: column;
+        align-items: center;
     }
 }
