@@ -1,13 +1,13 @@
 {
   "main.css": "/heroapi/static/css/main.177b5dbd.chunk.css",
-  "main.js": "/heroapi/static/js/main.6722d2e3.chunk.js",
-  "main.js.map": "/heroapi/static/js/main.6722d2e3.chunk.js.map",
+  "main.js": "/heroapi/static/js/main.7f2816fa.chunk.js",
+  "main.js.map": "/heroapi/static/js/main.7f2816fa.chunk.js.map",
   "static/js/1.dcfccda6.chunk.js": "/heroapi/static/js/1.dcfccda6.chunk.js",
   "static/js/1.dcfccda6.chunk.js.map": "/heroapi/static/js/1.dcfccda6.chunk.js.map",
   "runtime~main.js": "/heroapi/static/js/runtime~main.06e07355.js",
   "runtime~main.js.map": "/heroapi/static/js/runtime~main.06e07355.js.map",
   "static/css/main.177b5dbd.chunk.css.map": "/heroapi/static/css/main.177b5dbd.chunk.css.map",
   "index.html": "/heroapi/index.html",
-  "precache-manifest.f90fd994b7fb885f07236f3e29959b72.js": "/heroapi/precache-manifest.f90fd994b7fb885f07236f3e29959b72.js",
+  "precache-manifest.e1ba2f28be19e087ba09b33b14c16b36.js": "/heroapi/precache-manifest.e1ba2f28be19e087ba09b33b14c16b36.js",
   "service-worker.js": "/heroapi/service-worker.js"
 }

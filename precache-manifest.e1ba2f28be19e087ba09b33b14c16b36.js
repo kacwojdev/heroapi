@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6722d2e384943b45d5b2",
+    "revision": "7f2816fa16d324d8accc",
     "url": "/heroapi/static/css/main.177b5dbd.chunk.css"
   },
   {
-    "revision": "6722d2e384943b45d5b2",
-    "url": "/heroapi/static/js/main.6722d2e3.chunk.js"
+    "revision": "7f2816fa16d324d8accc",
+    "url": "/heroapi/static/js/main.7f2816fa.chunk.js"
   },
   {
     "revision": "dcfccda694c8369783a7",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/heroapi/static/js/runtime~main.06e07355.js"
   },
   {
-    "revision": "1758eec79c98a9161202c8b1a56e00de",
+    "revision": "d929b65b4fc1861de00c30f9a4bf693d",
     "url": "/heroapi/index.html"
   }
 ];
